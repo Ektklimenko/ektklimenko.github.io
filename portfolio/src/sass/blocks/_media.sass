@@ -1,0 +1,218 @@
+@media (max-width: 1439px)
+	.sidepanel
+		display: none
+@media (max-width: 1200px)
+	.container
+		max-width: 960px
+	.sidepanel
+		display: none
+	.about
+		&_wrapper
+			grid-template-columns: 400px 520px
+			column-gap: 40px
+		&_skills
+			column-gap: 20px
+			grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px)
+			&-item
+				column-gap: 15px
+				grid-template-columns: 40px 195px
+	.resume
+		&_wrapper
+			grid-template-columns: repeat(2, 385px)
+			column-gap: 95px
+	.skills
+		.wrapper
+			grid-template-columns: repeat(auto-fit, 270px)
+		&_item
+			grid-template-columns: repeat(auto-fit, 270px)
+			justify-content: space-between
+		&_ratings
+			padding: 0 30px
+			grid-template-columns: repeat(auto-fit, 350px)
+			justify-content: space-between
+	.portfolio
+		&_wrapper
+			grid-template-columns: repeat(auto-fit, 280px)
+			grid-auto-rows: 280px
+			justify-content: space-around
+			row-gap: 35px
+			.horizontal, .vertical
+				grid-row: unset
+				grid-column: unset
+	.contacts
+		&_wrapper
+			grid-template-columns: 300px 500px
+			padding-left: 35px
+		&_form
+			grid-template-columns: repeat(2, 240px)
+
+@media (max-width: 992px)
+	.container
+		max-width: 720px
+	.title
+		&_fs36
+			font-size: 30px
+	.about
+		&_wrapper
+			grid-template-columns: 300px 380px
+		&_photo
+			img
+				height: 100%
+		&_skills
+			grid-template-columns: 380px
+			grid-auto-rows: minmax(115px, auto)
+			&-item
+				column-gap: 20px
+				grid-template-columns: 40px 320px
+	.resume
+		&_wrapper
+			padding-left: 40px
+			padding-right: 0
+			grid-template-columns: repeat(2, 312px)
+			column-gap: 30px
+	.skills
+		.wrapper
+			justify-content: center
+		&_item
+			padding: 20px 20px
+		&_ratings
+			margin-top: 90px
+			grid-template-columns: repeat(auto-fit, 320px)
+			justify-content: space-between
+			padding: 0
+			column-gap: 0
+			&-line
+				width: 100%
+	.price
+		&_wrapper
+			padding: 0
+			grid-template-columns: repeat(auto-fit, 350px)
+	.contacts
+		&_wrapper
+			padding: 0
+			grid-template-columns: 250px 450px
+		&_form
+			grid-template-columns: repeat(2, 180px)
+			row-gap: 20px
+		&_btn
+			font-size: 13px
+
+@media (max-width: 768px)
+	.container
+		max-width: 540px
+	.title
+		&_fs48
+			font-size: 28px
+	.promo
+		&_title
+			width: 300px
+			line-height: 39px
+	.about
+		padding-top: 40px
+		&_wrapper
+			grid-template: 400px auto auto / 1fr
+		&_skills
+			grid-template-columns: repeat(2, 260px)
+			&-item
+				grid-template-columns: 40px 200px
+				column-gap: 20px
+	.resume
+		&_wrapper
+			grid-template-columns: 385px
+	.skills
+		padding-top: 40px
+		.wrapper
+			justify-content: center
+		&_item
+			gap: 20px
+		&_ratings
+			grid-template-columns: repeat(auto-fit, 320px)
+			grid-auto-rows: minmax(70px, auto)
+			justify-content: center
+			margin-top: 40px
+			&-line
+				width: 100%
+	.portfolio
+		padding-top: 40px
+	.price
+		padding-top: 40px
+		&_wrapper
+			justify-content: center
+			margin-top: 20px
+	.contacts
+		&_photo
+			display: none
+		&_wrapper
+			justify-content: center
+			grid-template-columns: 450px
+	.modal
+		&__dialog
+			max-width: 400px
+
+@media (max-width: 576px)
+	.container
+		width: 100%
+		padding: 0 10px
+	.title
+		&_fs48
+			font-size: 26px
+		&_fs36
+			font-size: 24px
+	.hamburger
+		right: 20px
+	.menu
+		&_block
+			width: 250px
+			padding-left: 20px
+	.promo
+		&_btns
+			margin-top: 30px
+	.about
+		&_wrapper
+			grid-template: 340px auto auto / 1fr
+		&_skills
+			grid-template-columns: 1fr
+	.resume
+		&_wrapper
+			padding-left: 8px
+			padding-right: 12px
+			grid-template-columns: 300px
+		&_item
+			&:before
+				width: 42px
+			&-head
+				padding-left: 70px
+			&-icon
+				left: 20px
+				&::before
+					left: -5px
+			&-body
+				width: 250px
+	.skills
+		&_item
+			margin-top: 20px
+		&_ratings
+			grid-template-columns: repeat(auto-fit, 300px)
+	.price
+		&_wrapper
+			grid-template-columns: repeat(auto-fit, 295px)
+		&_price
+			font-size: 12px
+	.contacts
+		&_wrapper
+			grid-template-columns: 295px
+		&_form
+			grid-template-columns: repeat(2, 140px)
+			row-gap: 20px
+		&_triggers
+			grid-template-columns: auto
+		&_btn
+			font-size: 12px
+			line-height: 12px
+		&_policy
+			justify-content: center
+			margin-top: 10px
+			font-size: 8px
+	.modal
+		&__dialog
+			max-width: 300px

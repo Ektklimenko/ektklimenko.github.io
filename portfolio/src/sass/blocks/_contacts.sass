@@ -1,0 +1,78 @@
+.contacts
+	padding: 120px 0 90px 0
+	&_wrapper
+		padding: 0 35px 0 52px
+		display: grid
+		grid-template-columns: 400px 585px
+		justify-content: space-between
+	&_photo
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&_descr
+		padding-top: 6px
+		.devider
+			margin: 0
+	&_text, &_social
+		margin-top: 20px
+	&_link
+		text-decoration: none
+		margin-right: 25px
+		img
+			max-width: 30px
+	&_title
+		position: relative
+		padding: 1px 0 0 12px
+		@include before_circle
+	&_form
+		margin-top: 30px
+		display: grid
+		grid-template: 45px 190px 45px / repeat(2, 280px)
+		justify-content: space-between
+		row-gap: 27px
+		label
+			display: block
+			position: absolute
+			height: 18px
+			padding: 0 8px
+			background-color: #fff
+			font-size: 12px
+			top: -9px
+			left: 12px
+			margin-bottom: 0
+	&_triggers
+		margin-top: 20px
+		grid-column: 1 / 3
+		display: grid
+		grid-template-columns: repeat(2, auto)
+		column-gap: 35px
+	&_policy
+		font-size: 12px
+		line-height: 14px
+		display: flex
+		align-items: center
+		input
+			margin-right: 10px
+	&_input
+		position: relative
+		input
+			width: 100%
+			height: 100%
+			padding: 0 20px
+			font-size: 12px
+	&_textarea
+		position: relative
+		grid-column: 1 / 3
+		textarea
+			width: 100%
+			height: 100%
+			resize: none
+			padding: 20px
+			font-size: 12px
+			margin-bottom: 0
+	&_btn
+		border: none
+		font-weight: bold
+		font-size: 14px
+		line-height: 21px
